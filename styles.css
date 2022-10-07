@@ -1,0 +1,358 @@
+
+#title{
+  background-color:rgb(39, 37, 37);
+}
+#title .container-fluid{
+  padding: 0.2% 3% 0.2% 3%;
+  color:hsl(-80, 1321%, 99%);
+}
+.navbar{
+  padding:1,1,0,1rem;
+  color:hsl(-80, 1321%, 99%);
+}
+.navbar-brand{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.nav-item{
+  padding: 0 18px;
+  font-size: 1.4rem;
+  color:hsl(-80, 1321%, 99%);
+}
+#Home .row{
+  background-color: #4f4fbe;
+  padding:4%;
+}
+h2{
+  background-color:hsl(-80, 1321%, 99%);
+  width:80%;
+  margin:auto;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.it{
+  margin:auto;
+  width: 90%;
+}
+.btn{
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 30%;
+}
+.btn:hover{
+  color:hsl(-80, 1321%, 99%);
+}
+.typing{
+  padding-top: 40px;
+  letter-spacing: 1px;
+}
+
+h5{
+  color:hsl(-80, 1321%, 99%);
+  font-size: 1.70rem;
+  font-weight: 700;
+}
+
+#überMich{
+  font-size: 1.50rem;
+  font-weight: 500;
+  background-color:hsl(-80, 1321%, 99%) ;
+}
+.about{
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+#Skills{
+  background-color:#4f4fbe;
+  color: black;
+}
+#Skills strong{
+  color: hsl(-80, 1321%, 99%);
+}
+.skills{
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+
+#Projekte{
+  background-color:hsl(-80, 1321%, 99%);
+  color: rgb(39, 37, 37);
+}
+#Projekte h5{
+  background-color: black;
+}
+.pro{
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+#Kontakt{
+  background-color:#4f4fbe;
+}
+.contact{
+  font-size: 3.5rem;
+  font-weight:500;
+  color:hsl(-80, 1321%, 99%);
+}
+.column{
+  display: inline-block;
+  padding-top: 100px;
+}
+.heim{
+  font-size: 2rem;
+  font-weight:700;
+}
+
+h6{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+iframe{
+ display: block;
+ margin: auto;
+}
+.bx{
+  color:hsl(-80, 1321%, 99%);
+}
+.bx:hover{
+  color:black;
+}
+
+#footer{
+  background-color:rgb(39, 37, 37);
+  height: 7%;
+  color:hsl(-80, 1321%, 99%);
+  font-size: 1.18rem;
+  font-weight: 300;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+html,body{
+
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background-color: hsl(-80, 1321%, 99%);
+}
+::selection{
+  color:hsl(-80, 1321%, 99%);
+}
+.skill-bars{
+  padding: 25px 30px;
+  width: 600px;
+  background:hsl(-80, 1321%, 99%);
+  box-shadow: 5px 5px 20px hsl(-80, 1321%, 99%);
+  border-radius: 40px;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 10px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 1.5s 3s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: hsl(-80, 1321%, 99%);
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 5px 5px rgb(121, 121, 121),
+              0 1px hsl(-80, 1321%, 99%);
+  animation: animate 4s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background:#4f4fbe;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.bar .progress-line.css span{
+  width: 65%;
+}
+.bar .progress-line.cpp span{
+  width: 90%;
+}
+.bar .progress-line.python span{
+  width: 75%;
+}
+.bar .progress-line.html span{
+  width: 90%;
+}
+.bar .progress-line.jquery span{
+  width: 55%;
+}
+.bar .progress-line.bootsrap span{
+  width: 80%;
+}
+.bar .progress-line.javascript span{
+  width: 75%;
+}
+.bar .progress-line.sql span{
+  width: 50%;
+}
+.bar .progress-line.mysql span{
+  width: 50%;
+}
+.bar .progress-line.nodejs span{
+  width: 40%;
+}
+.bar .progress-line.unixcommand-line span{
+  width: 50%;
+}
+.bar .progress-line.matplotlib span{
+  width: 65%;
+}
+.bar .progress-line.numpy span{
+  width: 80%;
+}
+.bar .progress-line.scikitlearn span{
+  width: 60%;
+}
+.bar .progress-line.pandas span{
+  width: 60%;
+}
+.bar .progress-line.android span{
+  width: 70%;
+}
+.bar .progress-line.windows span{
+  width: 75%;
+}
+.bar .progress-line.assembler span{
+  width: 65%;
+}
+.bar .progress-line.ms-office span{
+  width: 75%;
+}
+.bar .progress-line.sps-programmierung span{
+  width: 55%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: rgb(39, 37, 37);
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: rgb(39, 37, 37);
+  color: hsl(-80, 1321%, 99%);
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+
+.progress-line.css span::after{
+  content: "65%";
+}
+.progress-line.cpp span::after{
+  content: "90%";
+}
+.progress-line.python span::after{
+  content: "75%";
+}
+.progress-line.html span::after{
+  content: "90%";
+}
+.progress-line.jquery span::after{
+  content: "55%";
+}
+.progress-line.bootsrap span::after{
+  content: "80%";
+}
+.progress-line.javascript span::after{
+  content: "75%";
+}
+.progress-line.sql span::after{
+  content: "50%";
+}
+.progress-line.mysql span::after{
+  content: "50%";
+}
+.progress-line.nodejs span::after{
+  content: "40%";
+}
+.progress-line.unixcommand-line span::after{
+  content: "50%";
+}
+.progress-line.matplotlib span::after{
+  content: "65%";
+}
+.progress-line.numpy span::after{
+  content: "80%";
+}
+.progress-line.scikitlearn span::after{
+  content: "60%";
+}
+.progress-line.pandas span::after{
+  content: "60%";
+}
+.progress-line.android span::after{
+  content: "70%";
+}
+.progress-line.windows span::after{
+  content: "75%";
+}
+.progress-line.assembler span::after{
+  content: "65%";
+}
+.progress-line.ms-office span::after{
+  content: "75%";
+}
+.progress-line.sps-programmierung span::after{
+  content: "55%";
+}
